@@ -93,7 +93,7 @@ module ImportScripts::PhpBB3
     end
 
     def get_import_id(msg_id)
-      "pm:#{msg_id}"
+      @settings.prefix("pm:#{msg_id}")
     end
 
     # Creates a sorted array consisting of the message's author and recipients.

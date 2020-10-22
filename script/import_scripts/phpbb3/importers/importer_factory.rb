@@ -44,7 +44,7 @@ module ImportScripts::PhpBB3
     end
 
     def bookmark_importer
-      BookmarkImporter.new
+      BookmarkImporter.new(@settings)
     end
 
     def permalink_importer
