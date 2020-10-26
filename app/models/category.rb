@@ -823,8 +823,12 @@ class Category < ActiveRecord::Base
 
   def self.find_by_slug(category_slug, parent_category_slug = nil)
     return nil if category_slug.nil?
+    return find_by_slug_path([category_slug]) if parent_category_slug.nil?
 
-    find_by_slug_path([parent_category_slug, category_slug].compact)
+    parent = parent_category_slug.split('/')
+    result = parent + [category_slug]
+
+    find_by_slug_path(result)
   end
 
   def subcategory_list_includes_topics?
