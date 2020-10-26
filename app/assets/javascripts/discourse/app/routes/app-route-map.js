@@ -27,7 +27,7 @@ export default function () {
   });
   this.route(
     "editChildCategory",
-    { path: "/c/:parentSlug/:slug/edit" },
+    { path: "/c/*parentSlug/:slug/edit" },
     function () {
       this.route("tabs", { path: "/:tab" });
     }
