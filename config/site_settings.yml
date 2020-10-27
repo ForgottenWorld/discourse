@@ -256,7 +256,7 @@ basic:
     client: true
     default: 2
     min: 2
-    max: 3
+    max: 7
     hidden: true
   enable_mobile_theme:
     client: true
