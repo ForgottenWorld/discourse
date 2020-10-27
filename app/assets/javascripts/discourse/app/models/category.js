@@ -315,7 +315,7 @@ Category.reopenClass({
     return _uncategorized;
   },
 
-  slugFor(category, separator = "/", depth = 3) {
+  slugFor(category, separator = "/", depth) {
     if (!category) {
       return "";
     }
@@ -323,9 +323,12 @@ Category.reopenClass({
     const parentCategory = get(category, "parentCategory");
     let result = "";
 
-    if (parentCategory && depth > 1) {
-      result =
-        Category.slugFor(parentCategory, separator, depth - 1) + separator;
+    if (parentCategory) {
+      if (typeof depth === 'undefined') {
+        result = Category.slugFor(parentCategory, separator) + separator;
+      } else if (depth > 1) {
+        result = Category.slugFor(parentCategory, separator, depth - 1) + separator;
+      }
     }
 
     const id = get(category, "id"),
