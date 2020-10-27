@@ -394,7 +394,7 @@ basic:
     client: true
     default: 2
     min: 2
-    max: 3
+    max: 10
     hidden: true
     area: "categories"
   enable_direct_s3_uploads:
