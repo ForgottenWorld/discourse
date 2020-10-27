@@ -315,7 +315,7 @@ Category.reopenClass({
     return _uncategorized;
   },
 
-  slugFor(category, separator = "/", depth = 3) {
+  slugFor(category, separator = "/", depth = 10) {
     if (!category) {
       return "";
     }
