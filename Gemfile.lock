@@ -171,7 +171,7 @@ GEM
     hkdf (0.3.0)
     htmlentities (4.3.4)
     http_accept_language (2.1.1)
-    i18n (1.8.10)
+    i18n (1.8.11)
       concurrent-ruby (~> 1.0)
     image_optim (0.31.0)
       exifr (~> 1.2, >= 1.2.2)
@@ -325,7 +325,7 @@ GEM
       activerecord (~> 6.0)
       concurrent-ruby
       railties (~> 6.0)
-    rails_multisite (3.1.0)
+    rails_multisite (4.0.0)
       activerecord (> 5.0, < 7)
       railties (> 5.0, < 7)
     railties (6.1.4.1)
@@ -473,7 +473,7 @@ GEM
       jwt (~> 2.0)
     xorcist (1.1.2)
     yaml-lint (0.0.10)
-    zeitwerk (2.4.2)
+    zeitwerk (2.5.1)
 
 PLATFORMS
   arm64-darwin-20
