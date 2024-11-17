@@ -83,8 +83,8 @@ importers:
         specifier: ^8.57.0
         version: 8.57.0
       jsdoc:
-        specifier: ^4.0.0
-        version: 4.0.3
+        specifier: ^4.0.4
+        version: 4.0.4
       lefthook:
         specifier: ^1.7.18
         version: 1.7.18
@@ -4773,6 +4773,7 @@ packages:
   eslint@8.57.0:
     resolution: {integrity: sha512-dZ6+mexnaTIbSBZWgou51U6OmzIhYM2VcNdtiTtI7qPNZm35Akpr0f6vtw3w1Kmn5PYo+tZVfh13WrhpS6oLqQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
 
   esm@3.2.25:
@@ -5872,8 +5873,8 @@ packages:
   js2xmlparser@4.0.2:
     resolution: {integrity: sha512-6n4D8gLlLf1n5mNLQPRfViYzu9RATblzPEtm1SthMX1Pjao0r9YI9nw7ZIfRxQMERS87mcswrg+r/OYrPRX6jA==}
 
-  jsdoc@4.0.3:
-    resolution: {integrity: sha512-Nu7Sf35kXJ1MWDZIMAuATRQTg1iIPdzh7tqJ6jjvaU/GfDf+qi5UV8zJR3Mo+/pYFvm8mzay4+6O5EWigaQBQw==}
+  jsdoc@4.0.4:
+    resolution: {integrity: sha512-zeFezwyXeG4syyYHbvh1A967IAqq/67yXtXvuL5wnqCkFZe8I0vKfm+EO+YEvLguo6w9CDUbrAXVtJSHh2E8rw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
 
@@ -8583,7 +8584,7 @@ snapshots:
       '@babel/helper-compilation-targets': 7.25.2
       '@babel/helper-module-transforms': 7.25.2(@babel/core@7.25.2)
       '@babel/helpers': 7.25.0
-      '@babel/parser': 7.25.6
+      '@babel/parser': 7.25.7
       '@babel/template': 7.25.0
       '@babel/traverse': 7.25.6
       '@babel/types': 7.25.6
@@ -16206,9 +16207,9 @@ snapshots:
     dependencies:
       xmlcreate: 2.0.4
 
-  jsdoc@4.0.3:
+  jsdoc@4.0.4:
     dependencies:
-      '@babel/parser': 7.25.6
+      '@babel/parser': 7.25.7
       '@jsdoc/salty': 0.2.5
       '@types/markdown-it': 14.1.2
       bluebird: 3.7.2
